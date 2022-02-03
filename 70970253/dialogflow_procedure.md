@@ -34,10 +34,16 @@ messages {
 }
 ```
 
-#### Create followup intent function:
+#### Create followup intent function - Edit the create_intent function `intent_management.py` with the following code to use :
+
+**After edit run with this line:**
+```
+python3 intent_management.py --project-id PROJECT_ID create "room.cancellation - Followup"  --training-phrases-parts "cancel" "cancellation" --message-texts "Are you sure you want to cancel?" "Cancelled."
+```
+
 
 ```python
-def create_followup_intent(project_id, display_name, training_phrases_parts, message_texts):
+def create_intent(project_id, parent_intent, display_name, training_phrases_parts, message_texts):
     """Create an intent of the given intent type."""
     from google.cloud import dialogflow
 
