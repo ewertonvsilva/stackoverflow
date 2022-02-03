@@ -48,7 +48,7 @@ def create_intent(project_id, parent_intent, display_name, training_phrases_part
     from google.cloud import dialogflow
 
     intents_client = dialogflow.IntentsClient()
-    
+    # TODO: EDIT WITH YOUR VALUES
     parent_intent="projects/project-id-<project id data>/agent/intents/792d58b1-30fc-49cd-be2b-<parent intent id>"
     parent = dialogflow.AgentsClient.agent_path(project_id)
 
