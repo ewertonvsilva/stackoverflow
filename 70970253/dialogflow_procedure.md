@@ -1,22 +1,22 @@
-# Install dependencies:
+#### Install dependencies:
 
 ```
 pip3 install google-cloud-dialogflow
 ```
 
-# Get code:
+#### Get code:
 
 ```
 curl https://raw.githubusercontent.com/googleapis/python-dialogflow/74a54c6fd9d6e03741206ff1e95939123362cab9/samples/snippets/intent_management.py > intent_management.py
 ```
 
-#Authenticate *(if you are not using a service acccount)* (open the ulr, copy the code and paste on terminal):
+#### Authenticate *(if you are not using a service acccount)* (open the ulr, copy the code and paste on terminal):
 
 ```
 gcloud auth application-default login
 ```
 
-# Create intent example:
+#### Create intent example:
 ```
 python3 intent_management.py --project-id PROJECT_ID create "room.cancellation - yes"  --training-phrases-parts "cancel" "cancellation" --message-texts "Are you sure you want to cancel?" "Cancelled."
 ```
@@ -34,7 +34,7 @@ messages {
 }
 ```
 
-# Create followup intent function:
+#### Create followup intent function:
 
 ```python
 def create_followup_intent(project_id, display_name, training_phrases_parts, message_texts):
