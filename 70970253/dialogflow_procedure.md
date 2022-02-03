@@ -43,8 +43,7 @@ def create_followup_intent(project_id, display_name, training_phrases_parts, mes
 
     intents_client = dialogflow.IntentsClient()
     
-    #parent = dialogflow.AgentsClient.agent_path(project_id)
-    parent_intent="projects/project-id-0239472927152336005/agent/intents/792d58b1-30fc-49cd-be2b-5ea4cc3818c7"
+    parent_intent="projects/project-id-<project id data>/agent/intents/792d58b1-30fc-49cd-be2b-<parent intent id>"
     parent = dialogflow.AgentsClient.agent_path(project_id)
 
     training_phrases = []
