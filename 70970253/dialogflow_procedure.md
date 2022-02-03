@@ -41,7 +41,7 @@ messages {
 python3 intent_management.py --project-id PROJECT_ID create "room.cancellation - Followup"  --training-phrases-parts "cancel" "cancellation" --message-texts "Are you sure you want to cancel?" "Cancelled."
 ```
 
-
+**create_intent used to create a followup intent:**
 ```python
 def create_intent(project_id, parent_intent, display_name, training_phrases_parts, message_texts):
     """Create an intent of the given intent type."""
