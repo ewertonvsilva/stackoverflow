@@ -1,3 +1,0 @@
-PROJECT=ewertonsilva
-REGION=europe-central2
-export GOOGLE_APPLICATION_CREDENTIALS="/home/ewertonsilva/cases-stack/stackoverflow/69626269/sa.json"
